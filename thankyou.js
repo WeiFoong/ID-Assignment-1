@@ -1,29 +1,26 @@
-/*function thankYou(){
-    var id = document.getElementById("submit");
-    var text = document.getElementById("msg");
-    if(id.onclick ==true){
-        text.style.display="block";
+var i = 0;
+var image = [];
+var time = 3000;
+
+image[0] = 'Image1.jpeg';
+image[1] = 'Image2.jpeg';
+image[2] = 'Image3.jpeg';
+image[3] = 'Image4.jpeg';
+
+function Image() {
+    document.slide.src = image[i];
+
+    if (i < image.length - 1) {
+        i++;
     }
-    else{
-        text.style.display="none";
+    else {
+        i = 0;
     }
-}*/
 
-
-/*jQuery(document).ready(function($){
-$(document).on( 'frmFormComplete', function( event, form, response ) {
-var formID = $(form).find('input[name="form_id"]').val();
-});
-});*/
-
-/*let form = document.getElementsByTagName("form")[0];
-form.addEventListener("submit", (e) => {
-    e.preventDefault();
-    alert("Thank you for submitting!");
-});*/
-
-function thankyou() {
-    alert("Thank you for your response!");
+    setTimeout("Image()", time);
 }
+
+window.onload = Image;
+
 
 
