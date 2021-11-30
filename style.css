@@ -7,6 +7,11 @@ body{background-color: #D6F2F3;
   font-family:cursive;
 }
 
+#textSize{
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
 li{font-size: 25px;}
 
 .heading{
@@ -17,7 +22,7 @@ li{font-size: 25px;}
   color:royalblue;
 }
 .heading2{
-  color:orange
+  color:slateblue;
 }
 
 .heading3{
@@ -69,14 +74,15 @@ li{font-size: 25px;}
 .first{
   display: flex;
   flex-direction: row;
-  width: 65%;
+  width: 60%;
   border: 3px solid black;
   margin-left: 20px;
 }
 
 .second{
-  width: 30%;
+  width: 35%;
   margin-left: 40px;
+  margin-right:5px;
   border: 3px solid black;
 }
 
@@ -103,20 +109,15 @@ li{font-size: 25px;}
   margin-left: 40px;
 }
 
-.seventh{
-  width:100%;
-  margin-bottom: 50px;
-}
-
 .education{
   margin-left:20px;
 }
 
-
 img{
   width: 100%;
-  height: 45%;
-  object-fit:auto;
+  height: 450px;
+  max-height: 700px;
+  max-width: 500px;
 }
 
 .linkedin{
@@ -150,45 +151,70 @@ img{
   margin-left: 50px;
   margin-right: 50px;
   margin-top: 35px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image{ 
+  margin: auto;
+  margin-left: 70px;
 }
 
 
-/* Responsive for mobile 
-@media (max-width: 1700px) {
-  /*.container {
-    flex-direction: column;
-  }
+
+/* Mobile view*/
+@media (max-width: 480px){
   .first{
-    width:100%;
+    width: 100%;
+    flex-direction: column;
+    border: 3px solid black;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .container{
+    flex-direction: column;
+    width: auto;
+  }
+  .split2{
+    margin-left:10px;
   }
   .second{
     width:100%;
+    margin: auto;
   }
-  .split2{
-    margin-left: 0px;
+
+  .image{
+    margin:auto;
+    width: auto;
+    height:auto;
+    margin-right: 10px;
+    margin-left: -10px;
   }
-  .img{
-    object-fit: auto;
-    flex-direction:column;}
-   .first{
-      width:100%;
-    }
-   .second{
-      width:100%;
+  .fourth{
+    flex-direction: row;
+    width: 100%;
+  }
+  .third{
+    width:100%;
+    flex-direction: row;
+    margin-right: 20px;
+  }
+  .container2{
+    margin:auto;
+    margin-top: -180px;
+  }
+  .container3{
+    margin:auto;
+    margin-top: 20px;
+  }
+  .fifth{
+    margin-right: 20px;
+  }
+  .container4{
+    margin-left: -10px;
   }
 }
 
-@media (max-width: 800px){
-  .container {
-    flex-direction: column;
-  }
-  .first{
-    width:100%;
-  }
-  .second{
-    width:100%;
-  }
-  .split2{
-    margin-left: 0px;
-  }
-}*/
+
+
+
