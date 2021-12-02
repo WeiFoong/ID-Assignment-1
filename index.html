@@ -5,46 +5,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <link href="thankyou.js" type="text/Javascript" />
+    <link href="CSS/normalise.css" rel="stylesheet" type="text/css" />
+    <link href="CSS/style.css" rel="stylesheet" type="text/css" />
+    <link href="JavaScript/slideshow.js" rel="stylesheet" type="text/Javascript" />
+    <link href="JavaScript/topBtn.js" rel="stylesheet" type="text/Javascript" />
+    <link href="JavaScript/navBar.js" rel="stylesheet" type="text/Javascript" />
     <title>Document</title>
 </head>
 
 <body>
-    <h1 class="name">Wei Foong</h1>
+    <button onclick="topFunction()" id="myBtn">Back to Top</button>
+    <script src="JavaScript/topBtn.js"></script>
+    <header>
+        <h1 class="name">Wei Foong</h1>
+        <nav id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <nav class="overlay-content">
+                <a href="#top">About Me</a>
+                <a href="#middle">Work Experience</a>
+                <a href="#bottom">Projects</a>
+            </nav>
+        </nav>
+        <span style="font-size:30px;cursor:pointer;margin-left:20px;" onclick="openNav()">&#9776; Open</span>
+        <script src="JavaScript/navBar.js"></script>
+    </header>
     <hr>
-
-    <div class="container">
-        <div class="first">
-            <div class=split>
-                <img src="Pictures/My picture.jpeg" />
-            </div>
-            <div class="split2">
-                <h1 class="heading"> About Me</h1>
+    <section class="container">
+        <section class="first">
+            <section class=split>
+                <img src="Pictures/Mypicture.jpeg" alt="" />
+            </section>
+            <section class="split2">
+                <h1 class="heading" id="top"> About Me</h1>
                 <p>I am a confident and social guy with an outgoing
                     personality. My patience, thoughtfulness and good
-                    manners make me popular among my peers. Being mature and sensible, I can be counted on to make sound
+                    manners make me popular among my peers. Being mature and sensible, I can be counted on to make
+                    sound
                     decisions and carry out assigned tasks responsibly and efficiently. I am also able to withstand
-                    pressure and remain undaunted by setbacks. In addition, I am also a very active person who enjoys
+                    pressure and remain undaunted by setbacks. In addition, I am also a very active person who
+                    enjoys
                     doing all kinds of sports. This has helped me learn to work well with my peers as well as not to
                     give up easily. </p>
                 <h1 class="heading">Values</h1>
                 <p> I am a person that strongly believes in respect for others as well as integrity. This is because
                     my school and parents taught me a lot about mutual respect and its importance.<br>
-                    Other than respect, I also believe that integrity is very important as it can determine ones character
+                    Other than respect, I also believe that integrity is very important as it can determine ones
+                    character
                     and how trustworthy one is. </p>
                 <h1 class="heading">Interests</h1>
                 <p>One of my hobby is playing basketball with my friends. Even though many of us
-                    are in different schools now, we will always try to make time to meet up and play basketball together
+                    are in different schools now, we will always try to make time to meet up and play basketball
+                    together
                     whenver we are free.<br>
                     Other than basketball, I also enjoy playing computer games such as "League of
-                    Legends" and "Valorant" with my friends. Since these games are online, we usually call each other
+                    Legends" and "Valorant" with my friends. Since these games are online, we usually call each
+                    other
                     and play together every night.</p>
-            </div>
-        </div>
+            </section>
+        </section>
 
-        <div class="second">
-            <div class="education">
+        <section class="second">
+            <section class="education">
                 <h1 class="heading2_0">My Education</h1>
                 <h2 class="heading2">Zhenghua Primary School (2011-2016)</h2>
                 <ul>
@@ -61,10 +82,10 @@
                     <li>Basketball Team (2017-2020)</li>
                     <li>Represented School in T-Net Basketball Tournament</li>
                     <li>Represented School in National School Games (2017-2020)</li>
-                    <li>Basketball C'Division Captain (2018)</li>
+                    <li>Basketball C'sectionision Captain (2018)</li>
                     <li>Overseas Immersion Trip to Surabaya, Indonesia</li>
                     <li>Participated in Outward Bound Singapore Camp (OBS)</li>
-                    <li>Basketball B'Division Vice Captain (2019-2020)</li>
+                    <li>Basketball B'sectionision Vice Captain (2019-2020)</li>
                     <li>Led 2 VIA Projects (2018 & 2019)</li>
                     <li>EAGLES award Recipient (2020)</li>
                     <li>GCE O-Level Nett Score of 9 & 12 for L1R4 and L1R5 Respectively</li>
@@ -72,30 +93,29 @@
 
                 <h2 class="heading2">Ngee Ann Polytechnic (Current)</h2>
                 <br>
-                <div class=image>
+                <section class=image>
+                    <img name="slide" alt="">
+                    <script src="JavaScript/slideshow.js"></script>
+                </section>
+                <p id=textSize>Pictures from overseas trips, competitions, camps, etc...</p>
+            </section>
+        </section>
+    </section>
 
-                    <script src="thankyou.js"></script>
-                    <img name="slide" id=slide>
-                </div>
-                <p id = textSize>Pictures from overseas trips, competitions, camps, etc...</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="container2">
-        <div class="third">
-            <div class="split3">
-                <h1 class="heading3">Work Experience</h1>
+    <section class="container2">
+        <section class="third">
+            <section class="split3">
+                <h1 class="heading3" id="middle">Work Experience</h1>
                 <ul>
-                    <li>Pan Asia Logistics Packer (Sept 2021 - Oct 2021)</li><br>
-                    <li>Redmart Warehouse Worker (Dec 2020 - Feb 2021)</li><br>
+                    <li>Pan Asia Logistics Packer (Sept 2021 - Oct 2021)</li>
+                    <li>Redmart Warehouse Worker (Dec 2020 - Feb 2021)</li>
                     <li>Banquet Server (Nov 2018 - Dec 2018)</li>
                 </ul>
-            </div>
-        </div>
+            </section>
+        </section>
 
-        <div class="fourth">
-            <div class="split4">
+        <section class="fourth">
+            <section class="split4">
                 <h1 class="heading3">Skills</h1>
                 <ul>
                     <li>Problem Solving</li>
@@ -108,43 +128,46 @@
                     <li>Python</li>
                     <li>Adobe</li>
                 </ul>
-            </div>
-        </div>
-    </div>
+            </section>
+        </section>
+    </section>
 
-    <div class="container3">
-        <div class="fifth">
-            <div class="split5">
-                <h1 class="heading4">Projects</h1>
+    <section class="container3">
+        <section class="fifth">
+            <section class="split5">
+                <h1 class="heading4" id="bottom">Projects</h1>
                 <h2>1st Project</h2>
                 <h3>Ngee Ann Polytechnic | School of ICT | Diploma in IT</h3>
-                <title>Website Design Assignment</title>
-                <p>By using HTML, CSS, and Javascript, I was able to make a static front-end responsive resume for my
-                    first assignment in Interactive Design. This website gives more information about me as a person,
+                <p>By using HTML, CSS, and Javascript, I was able to make a static front-end responsive resume for
+                    my
+                    first assignment in Interactive Design. This website gives more information about me as a
+                    person,
                     and what I have learnt throughout
                     my time in school.</p>
-                <p><a href="https://www.youtube.com">Link to Website</a></p>
+                <p><a href="https://www.youtube.com/" id="proj1">Link to Website</a></p>
                 <h2>2nd Project</h2>
                 <h3>Ngee Ann Polytechnic | School of ICT | Diploma in IT</h3>
-                <p>By using what I learnt in Programming 1, I was able to make a game called "Simp City". A game that
+                <p>By using what I learnt in Programming 1, I was able to make a game called "Simp City". A game
+                    that
                     makes use of my python knowledge that I learnt in my first semester of school.</p>
-                <p><a href="https://www.instagram.com">Link to Game</a></p>
-            </div>
-        </div>
-    </div>
-
-    <div class="container4">
-        <div class="sixth">
-            <h1>Contact me</h1>
-            <p><a href="https://www.linkedin.com/in/weifoongquek/">
-                    <img alt="LinkedIn" img src="Pictures/Linkedin.png" class="linkedin">
-                    Linkedin</a></p>
-            <p><a href="https://s10222808.wixsite.com/weifoong">
-                    <img alt="Wix" img src="Pictures/Wix.png" class="wix">
-                    Wix Website</a></p>
-            <br>
-        </div>
-    </div>
+                <p><a href="https://www.instagram.com/" id="proj2">Link to Game</a></p>
+            </section>
+        </section>
+    </section>
+    <footer>
+        <section class="container4">
+            <section class="sixth">
+                <h1>Contact me</h1>
+                <p><a href="https://www.linkedin.com/in/weifoongquek/" id="linkedinhover">
+                        <img src="Pictures/Linkedin.png" class="linkedin" alt="">
+                        LinkedIn </a></p>
+                <p><a href="https://s10222808.wixsite.com/weifoong" id="wixhover">
+                        <img src="Pictures/Wix.png" class="wix" alt="">
+                        Wix</a></p>
+                <br>
+            </section>
+        </section>
+    </footer>
 </body>
 
 </html>
